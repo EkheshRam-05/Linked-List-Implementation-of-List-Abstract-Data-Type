@@ -1,0 +1,127 @@
+Algorithm to Implement List Abstract Data Type with Linked List using pointers
+
+
+Algorithm:
+
+
+Step 1: Include Header Files
+
+
+Step 2: Declare the List, Functions and variables
+
+
+Step 3: Inside Main function ask for the choice prompting 
+	1.Insert
+	2.Delete
+	3.Find
+	4.Print
+	(o to exit)
+	Enter Your Choice:
+
+
+Step 4: If choice is 1:
+	4.1: call the Insert Function (goto Step 9)
+
+
+Step 5: If choice is 2:
+	5.1: call the Delete Function (goto Step 10)
+
+
+Step 6: If choice is 3:
+	6.1: call the Find Function (goto Step 11)
+
+
+Step 7: If choice is 4:
+	7.1: call the Print Function (goto Step 12)
+
+
+Step 8: If choice is 0:
+	8.1: exit the Program
+
+
+Step 9: Implementation of Insert Function
+	9.1: Get the element to Insert
+
+	9.2: check if the list is empty
+		if empty:
+			1.update element as first list element
+			2.increment list size
+			3.exit the function
+		else:
+			1.continue with the insert function
+
+	9.3: get the position to insert
+		if position > list size:
+			1.update element at the end of the list
+			2.increment list size
+			3.exit the function
+		else:
+			1.continue with the insert function
+
+	9.4: traverse through list using while loop
+		if position == itteration count:
+			1.update element at that position
+			2.increment list size
+			3.exit the function
+		else:
+			1.update the itteration count
+			2.goto next element in the list
+
+
+
+Step 10: Implementation of Delete Function
+
+	10.1: Get the element to from the list
+
+	10.2: check if the list is empty
+		if empty:
+			1.display list is empty
+			2.exit function
+		else:
+			1.continue with the Delete function
+
+	10.3: use while loop to itteration through list
+		if list element is equals to the user input
+			1.delete the element
+			2.decrement the list size
+			2.exit the function
+		else:
+			1.goto the next element
+
+	10.4: print element not found
+
+	10.5: exit the function
+
+
+
+Step 11: Implementation of Find function
+	11.1: Get the element to find from the list
+	11.2: check if the list is empty
+		if empty:
+			1.display list is empty
+			2.exit function
+		else:
+			1.continue with the find function
+	11.3: use while loop to itteration through list
+		if list element is equals to the user input
+			1.print the position of the element
+			2.exit the function
+		else:
+			1.goto the next element
+	11.4: print element not found
+	11.5: exit the function
+
+Step 12: Implementation of Print function
+
+	12.1: check if the list is empty
+		if empty:
+			1.display list is empty
+			2.exit function
+		else:
+			1.continue with the find function
+
+	12.2: use while loop to itteration through list
+		1.print the element
+		2.goto the next element
+
+	12.3: exit the function
